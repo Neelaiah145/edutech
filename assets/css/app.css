@@ -73,9 +73,10 @@
     --transition: 0.3s;
     --transition-2: 0.5s;
     --transition-transform: transform .65s cubic-bezier(.23, 1, .32, 1);
-    --font-primary: 'Poppins', sans-serif;
-    --font-secondary: 'Spartan', sans-serif;
-    --font-icomoon: 'icomoon';
+--font-primary: 'Poppins', sans-serif;   /* Rounded, modern headings */
+--font-secondary: 'Roboto', sans-serif;  /* Clean body text */ /* Clean and readable for body text */
+--font-icomoon: 'icomoon';                  /* Keep for icons or switch to FontAwesome if needed */
+
     --font-size-b1: 15px;
     --font-size-b2: 13px;
     --line-height-b1: 1.73;
