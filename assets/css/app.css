@@ -5848,7 +5848,7 @@ body.sal-disabled [data-sal|='flip'] {
 }
 
 .about-content {
-    padding-left: 30px
+    padding-left: 0px
 }
 
 @media only screen and (max-width:991px) {
@@ -10277,7 +10277,7 @@ only screen and (max-width:1199px) {
     transition: var(--transition)
 }
 
-.edu-course .course-hover-content-wrapper {
+/* .edu-course .course-hover-content-wrapper {
     position: absolute;
     content: '';
     width: 100%;
@@ -10288,7 +10288,7 @@ only screen and (max-width:1199px) {
     transition: var(--transition);
     opacity: 0;
     background-color: var(--color-primary)
-}
+} */
 
 .edu-course .course-hover-content-wrapper button.wishlist-btn {
     background: rgba(255, 255, 255, .15);
@@ -30247,7 +30247,7 @@ only screen and (min-width:992px) and (max-width:1199px) {
 }
 
 .edu-header .header-brand .logo {
-    margin-right: 40px
+    margin-right: -140px
 }
 
 @media only screen and (max-width:575px) {
@@ -31027,7 +31027,8 @@ only screen and (min-width:992px) and (max-width:1199px) {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0;
-    padding-left: 200px;
+    padding-left: 0px;
+  
     font-family: var(--font-secondary)
 }
 
