@@ -1206,6 +1206,20 @@ img {
     transform: translateY(20px) scale(0.95); /* Slightly down and smaller */
     animation: fadeSlideScale 1s forwards;  /* Keyframe animation */
 }
+.logo-light {
+    width: 50%;        /* logo is 50% of container */
+    max-width: 100%;   /* prevents accidental overflow */
+    height: auto;      /* maintains aspect ratio */
+    display: block;    /* helps centering */
+    margin: 0 auto;    /* center the logo */
+}
+
+@media (max-width: 768px) {
+    .logo-light {
+        width: 70%;    /* bigger on mobile */
+    }
+}
+
 
 /* Optional: stagger delay for multiple images */
 img:nth-child(1) { animation-delay: 0.1s; }
