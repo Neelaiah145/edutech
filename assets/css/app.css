@@ -30171,7 +30171,7 @@ only screen and (min-width:992px) and (max-width:1199px) {
 }
 
 .edu-header .header-mainmenu {
-    background-color: var(--color-white);
+    background-color: #81d0b41a;
     box-shadow: 0 6px 15px 0 rgba(0, 0, 0, .05);
     position: relative
 }
@@ -31027,7 +31027,7 @@ only screen and (min-width:992px) and (max-width:1199px) {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0;
-    padding: 0;
+    padding-left: 200px;
     font-family: var(--font-secondary)
 }
 
