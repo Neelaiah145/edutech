@@ -1691,7 +1691,7 @@ ol {
 ul {
     list-style: none;
     margin-bottom: 30px;
-    padding-left: 20px
+    padding-left: 0px
 }
 
 ul.liststyle.bullet li {
@@ -6623,13 +6623,16 @@ body.sal-disabled [data-sal|='flip'] {
 .about-style-8 {
     position: relative
 }
+.icon img {
+  filter: invert(44%) sepia(82%) saturate(410%) hue-rotate(70deg) brightness(90%) contrast(90%);
+}
 
 .about-style-8:before {
     content: "";
     height: 1030px;
     width: 100%;
-    background: -webkit-linear-gradient(right, #f5f1eb 0%, rgba(245, 241, 235, .3) 100%);
-    background: linear-gradient(-90deg, #f5f1eb 0%, rgba(245, 241, 235, .3) 100%);
+    /* background: -webkit-linear-gradient(right, #f5f1eb 0%, rgba(245, 241, 235, .3) 100%);
+    background: linear-gradient(-90deg, #f5f1eb 0%, rgba(245, 241, 235, .3) 100%); */
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 90%);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 90%);
     position: absolute;
@@ -42154,6 +42157,13 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     padding: 70px 0;
     background-color: #f5f7fa;
 }
+.rs-popular-courses.style1 .courses-item {
+    padding: 30px;
+    border: 1px solid #dfe9eb;
+    border-radius: 5px;
+    transition: all 0.3s 
+ease;
+}
 
 #rs-popular-courses .sec-title .sub-title {
     font-size: 16px;
@@ -42226,6 +42236,7 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
+    gap:40px;
 }
 .flaticon-right-arrow:before {
     content: "\f133";
@@ -42239,8 +42250,14 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     border-radius: 4px;
     font-size: 14px;
     transition: all 0.3s ease;
+    
 }
 
+.meta-part li {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none; /* removes default bullet or square */
+}
 
 .meta-part .categorie {
     font-size: 14px;
@@ -42277,8 +42294,10 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     display: flex;
     gap: 10px;
     align-items: center;
+    
    
 }
+
 
 .info-meta ul li {
     list-style: none !important;
