@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Spartan:wght@400;500;600;700;800&amp;display=swap);
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
-    --color-primary: #1B8F45;
+    --color-primary: #1cce57;
     --color-secondary:  #ffec00;
     --color-sub-text:#E8A95B;
     --color-textSecondary: #ff5b5c;
@@ -73,8 +73,8 @@
     --transition: 0.3s;
     --transition-2: 0.5s;
     --transition-transform: transform .65s cubic-bezier(.23, 1, .32, 1);
---font-primary: 'Poppins', sans-serif;   /* Rounded, modern headings */
---font-secondary: 'Roboto', sans-serif;  /* Clean body text */ /* Clean and readable for body text */
+--font-primary: 'Plus Jakarta Sans', sans-serif;  /* Rounded, modern headings */
+--font-secondary:'Plus Jakarta Sans', sans-serif;  /* Clean body text */ /* Clean and readable for body text */
 --font-icomoon: 'icomoon';                  /* Keep for icons or switch to FontAwesome if needed */
 
     --font-size-b1: 15px;
@@ -1689,7 +1689,7 @@ ol {
 }
 
 ul {
-    list-style: square;
+    list-style: none;
     margin-bottom: 30px;
     padding-left: 20px
 }
@@ -42114,5 +42114,287 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 @media (max-width: 768px) {
     .partner-section {
         padding: 50px 0;
+    }
+}
+
+
+
+
+/* Your original padding */
+.edu-section-gap {
+    padding: 70px 0;   /* (same as you wrote before) */
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .edu-section-gap {
+        padding: 70px 0;   /* same padding maintained */
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .edu-section-gap {
+        padding: 70px 0;   /* same padding maintained */
+    }
+}
+
+
+@media (min-width: 768px) { .container { max-width: 720px; } }
+@media (min-width: 1024px) { .container { max-width: 960px; } }
+@media (min-width: 1280px) { .container { max-width: 1150px; } }
+@media (min-width: 1440px) { .container { max-width: 1270px; } }
+@media (min-width: 1600px) { .container { max-width: 1400px; } }
+@media (min-width: 1920px) { .container { max-width: 1600px; } }
+
+/* ================================================
+   SECTION TITLE AREA
+================================================ */
+#rs-popular-courses {
+    padding: 70px 0;
+    background-color: #f5f7fa;
+}
+
+#rs-popular-courses .sec-title .sub-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4A90E2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+#rs-popular-courses .sec-title .title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+    padding:70px 0px;
+}
+
+/* ================================================
+   VIEW ALL BUTTON
+================================================ */
+#rs-popular-courses .readon {
+    background: #4A90E2;
+    padding: 12px 26px;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#rs-popular-courses .readon:hover {
+    background: #357ABD;
+}
+
+/* ================================================
+   COURSE CARD
+================================================ */
+.courses-item {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+}
+
+.courses-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* Image */
+.courses-item .img-part img {
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+    transition: transform 0.4s ease;
+}
+
+.courses-item:hover .img-part img {
+    transform: scale(1.04);
+}
+
+/* Content */
+.courses-item .content-part {
+    padding: 22px;
+}
+
+/* Meta (price + category) */
+.meta-part {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.flaticon-right-arrow:before {
+    content: "\f133";
+}
+.meta-part .price {
+    display: inline-block;
+    padding: 3px 20px;
+    color: #ffffff;
+    font-weight: 600;
+    background: #21a7d0;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+
+.meta-part .categorie {
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+    text-decoration: none;
+}
+
+/* Title */
+.courses-item .title a {
+    font-size: 19px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-decoration: none;
+    line-height: 1.4;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.courses-item .title a:hover {
+    color: #4A90E2;
+}
+
+/* Bottom Info */
+.bottom-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-meta ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+   
+}
+
+.info-meta ul li {
+    list-style: none !important;
+    font-size: 14px;
+    color: #6d6d6d;
+}
+
+.info-meta .fa-star {
+    color: #F9A825;
+}
+
+/* Arrow button */
+.btn-part a {
+    background: #4A90E2;
+    color: #fff;
+    padding: 9px 11px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-part a:hover {
+    background: #357ABD;
+}
+
+/* Remove default bullets & align */
+.info-meta ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Add 👤 before user number */
+.info-meta ul li.user::before {
+    content: "👤";
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+/* Stars container */
+.info-meta ul li.ratings {
+    color: #ffb400;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.info-meta ul li.ratings i {
+    color: #ffb400;
+}
+/* Remove default bullets & align */
+.info-meta ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* User item */
+.info-meta ul li.user::before {
+    content: "👤"; /* custom symbol */
+    margin-right: 5px;
+    font-size: 16px;
+    color: #21a7d0;
+}
+
+/* Ratings item */
+.info-meta ul li.ratings::before {
+    content: "⭐"; /* star symbol */
+    margin-right: 5px;
+    font-size: 16px;
+    color: #ffb400;
+}
+
+/* Each li */
+.info-meta ul li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #6d6d6d;
+    gap: 5px; /* space between text and icon */
+}
+
+/* ================================================
+   RESPONSIVE COURSE GRID
+================================================ */
+
+/* Mobile: One Card */
+@media (max-width: 575px) {
+    .col-md-6, .col-lg-4 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #rs-popular-courses .sec-title .title {
+        font-size: 28px;
+    }
+}
+
+/* Tablet: Two Cards */
+@media (min-width: 576px) and (max-width: 991px) {
+    .col-md-6 {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Desktop: Three Cards */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: 33.333%;
+        margin-bottom: 30px;
     }
 }
