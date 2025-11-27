@@ -15716,7 +15716,7 @@ body .tpd-size-medium .tpd-content {
 }
 
 .hero-banner {
-    min-height: 660px;
+    min-height: 600px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -34490,7 +34490,7 @@ blockquote .author {
 }
 
 .edu-section-gap {
-    padding: 115px 0 120px
+    padding: 70px 0;
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -34506,7 +34506,7 @@ blockquote .author {
 }
 
 .gap-tb-text {
-    padding: 115px 0 112px
+    padding: 70px 0;
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -34585,9 +34585,9 @@ blockquote .author {
     }
 }
 
-.gap-bottom-equal {
+/* .gap-bottom-equal {
     padding-bottom: 120px
-}
+} */
 
 @media only screen and (min-width:768px) and (max-width:991px) {
     .gap-bottom-equal {
@@ -34602,7 +34602,7 @@ blockquote .author {
 }
 
 .section-gap-large {
-    padding: 145px 0 150px
+   padding: 70px 0;
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px) {

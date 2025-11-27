@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hero Slider</title>
+<style>
+/* ===== HERO SLIDER STYLES ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-slider {
+    position: relative;
+    overflow: hidden;
+    background: #f9fafc;
+}
+
+.hero-slide {
+    display: none;
+    padding: 80px 0;
+    animation: slideIn 1s forwards;
+}
+
+.hero-slide.active {
+    display: block;
+}
+
+/* Slide animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Content Styles */
+.banner-content .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner-content .color-secondary {
+    color: #4A90E2;
+}
+
+.banner-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.edu-btn {
+    padding: 12px 25px;
+    background-color: #4A90E2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.edu-btn:hover {
+    background-color: #357ABD;
+}
+
+/* Thumbnail Image */
+.banner-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Grid Layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col-lg-6 {
+    width: 50%;
+    padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .col-lg-6 {
+        width: 100%;
+        text-align: center;
+    }
+    .banner-content .title {
+        font-size: 28px;
+    }
+}
+
+/* Navigation Buttons */
+.prev-slide, .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.prev-slide {
+    left: 10px;
+}
+
+.next-slide {
+    right: 10px;
+}
+
+.prev-slide:hover, .next-slide:hover {
+    background: rgba(0,0,0,0.8);
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HERO SLIDER ===== -->
+<div class="hero-slider">
+
+    <!-- Slide 1 -->
+    <div class="hero-slide active">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner-content">
+                        <h1 class="title">
+                            Access <span class="color-secondary">2500+</span><br> High-Quality Online Courses
+                        </h1>
+                        <p>
+                            Learn new skills, upgrade your career, and achieve your goals with expert-led online
+                            courses, flexible learning paths, and industry-recognized certifications.
+                        </p>
+                        <div class="banner-btn">
+                            <a href="#" class="edu-btn">Explore Courses</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="banner-thumbnail">
+                        <img src="assets/images/banner/hero_imgs.png" alt="Girl Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero-slide">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner-content">
+                        <h1 class="title">
+                            Unlock <span class="color-secondary">500+</span><br> Expert-Led Tutorials
+                        </h1>
+                        <p>
+                            Get hands-on experience with industry projects, and take your career to the next level with
+                            curated courses and tutorials.
+                        </p>
+                        <div class="banner-btn">
+                            <a href="#" class="edu-btn">Start Learning</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="banner-thumbnail">
+                        <img src="assets/images/banner/hero_imgs2.png" alt="Girl Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="prev-slide">&#10094;</button>
+    <button class="next-slide">&#10095;</button>
+</div>
+
+<!-- ===== JS ===== -->
+<script>
+const slides = document.querySelectorAll('.hero-slide');
+const prevBtn = document.querySelector('.prev-slide');
+const nextBtn = document.querySelector('.next-slide');
+let currentIndex = 0;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if(i === index) slide.classList.add('active');
+    });
+}
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+});
+
+// Auto-slide every 5 seconds
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+}, 5000);
+</script>
+
+</body>
+</html>
