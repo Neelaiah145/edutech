@@ -3243,7 +3243,7 @@ input[type="radio"]:checked~label::before {
     text-align: center;
     line-height: 46px;
     font-size: 24px;
-    color: var(--color-sub-text);
+    color: var(--color-secondary);
     left: 0;
     top: 0;
     height: 46px;
