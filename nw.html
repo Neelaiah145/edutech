@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Carousel</title>
+<style>
+    /* General Reset */
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body, html {font-family: Arial, sans-serif; height: 100%;}
+
+    /* Carousel container */
+    .carousel {position: relative; width: 100%; height: 100vh; overflow: hidden;}
+    .carousel-item {position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: flex-start; opacity: 0; transition: opacity 1s ease;}
+    .carousel-item.active {opacity: 1; z-index: 1;}
+
+    /* Background image */
+    .carousel-item .slider-thumb {position: absolute; top:0; left:0; width:100%; height:100%; background-size: cover; background-position: center; z-index: 1; filter: brightness(0.6);}
+
+    /* Overlay content */
+    .carousel-content {position: relative; z-index: 2; max-width: 700px; margin-left: 50px; color: #fff;}
+    .carousel-content h3 {font-size: 1.8rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;}
+    .carousel-content h1 {font-size: 3rem; margin-bottom: 20px; line-height: 1.2;}
+    .carousel-content a {display:inline-block; padding: 12px 30px; margin-right: 15px; border-radius:50px; font-weight: 500; text-transform: uppercase; text-decoration:none; transition: 0.3s;}
+    .btn-light {background:#fff; color:#000; border:1px solid #fff;}
+    .btn-light:hover {background:transparent; color:#fff; border:1px solid #fff;}
+    .btn-theme {background:#ff4a57; color:#fff; border:none;}
+    .btn-theme:hover {background:#e03e4d;}
+
+    /* Animations */
+    .slideInLeft {animation: slideInLeft 1s forwards;}
+    .slideInUp {animation: slideInUp 1s forwards;}
+    @keyframes slideInLeft {from {transform: translateX(-50px); opacity:0;} to {transform: translateX(0); opacity:1;}}
+    @keyframes slideInUp {from {transform: translateY(50px); opacity:0;} to {transform: translateY(0); opacity:1;}}
+
+    /* Responsive */
+    @media(max-width:768px){
+        .carousel-content {margin-left: 20px;}
+        .carousel-content h1 {font-size:2rem;}
+        .carousel-content h3 {font-size:1.2rem;}
+        .carousel-content a {padding:8px 20px; font-size:0.9rem;}
+    }
+
+</style>
+</head>
+<body>
+
+<div class="carousel">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+        <div class="slider-thumb" style="background-image:url('https://picsum.photos/1200/800?image=1050');"></div>
+        <div class="carousel-content">
+            <h3 class="slideInLeft">Reach your career</h3>
+            <h1 class="slideInUp">Learn from the best online courses</h1>
+            <a href="#" class="btn btn-light slideInUp">Learn More</a>
+            <a href="#" class="btn btn-theme slideInUp">View Courses</a>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+        <div class="slider-thumb" style="background-image:url('https://picsum.photos/1200/800?image=1049');"></div>
+        <div class="carousel-content">
+            <h3 class="slideInLeft">We're glad to see you</h3>
+            <h1 class="slideInUp">Explore our brilliant graduates</h1>
+            <a href="#" class="btn btn-light slideInUp">Learn More</a>
+            <a href="#" class="btn btn-theme slideInUp">View Courses</a>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+        <div class="slider-thumb" style="background-image:url('https://picsum.photos/1200/800?image=1047');"></div>
+        <div class="carousel-content">
+            <h3 class="slideInLeft">The goal of education</h3>
+            <h1 class="slideInUp">Join the biggest Eduka community</h1>
+            <a href="#" class="btn btn-light slideInUp">Learn More</a>
+            <a href="#" class="btn btn-theme slideInUp">View Courses</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Carousel Auto Slide
+    let slides = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+    setInterval(() => {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].classList.add('active');
+    }, 5000); // Change slide every 5 sec
+</script>
+
+</body>
+</html>
