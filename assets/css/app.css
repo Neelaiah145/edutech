@@ -6754,9 +6754,9 @@ body.sal-disabled [data-sal|='flip'] {
     }
 }
 
-.about-style-8 {
+/* .about-style-8 {
     position: relative
-}
+} */
 
 
 .about-style-8:before {
@@ -16733,6 +16733,92 @@ only screen and (max-width:1199px) {
 
 
 
+/* ABOUT */
+/* ===============================
+   Mission & Vision Icons
+=============================== */
+
+
+/* Slightly decrease right-side About image height */
+.edu-about-area .about-image-gallery .thumbnail img {
+    max-height: calc(100% - 30%); /* decrease ~30px from original height */
+    width: 100%;                    /* keep width responsive */
+                    /* maintain aspect ratio */
+}
+
+.edu-about-area .about-mission .single-item .icon img {
+    width: 35px;       /* smaller icons */
+    height: 35px;
+    object-fit: contain;
+    border-radius: 50%; /* optional circular icons */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover scale effect on icons */
+.edu-about-area .about-mission .single-item:hover .icon img {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+/* ===============================
+   About Section Image
+=============================== */
+
+/* Wrapper floating animation */
+.edu-about-area .about-image-gallery .thumbnail .floating-img {
+    display: inline-block;
+    animation: floatImage 6s ease-in-out infinite;
+}
+
+/* Actual image style */
+.edu-about-area .about-image-gallery .thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;            /* rounded corners */
+    border: 3px solid #129078;      /* green border example */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* optional soft shadow */
+    transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease, border 0.3s ease;
+}
+
+/* Hover effect on image */
+.edu-about-area .about-image-gallery .thumbnail:hover img {
+    transform: scale(1.05) rotate(0.5deg);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    filter: brightness(1.05);
+    border-color: #2e3332; /* changes border color on hover */
+}
+
+/* Floating keyframes */
+@keyframes floatImage {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+/* ===============================
+   Responsive Adjustments
+=============================== */
+@media (max-width: 991px) {
+    .edu-about-area .about-mission .single-item .icon img {
+        width: 30px;
+        height: 30px;
+    }
+    .edu-about-area .about-image-gallery .thumbnail img {
+        border-radius: 12px;
+        border-width: 2px;
+    }
+}
+
+@media (max-width: 575px) {
+    .edu-about-area .about-mission .single-item .icon img {
+        width: 25px;
+        height: 25px;
+    }
+    .edu-about-area .about-image-gallery .thumbnail img {
+        border-radius: 10px;
+        border-width: 2px;
+    }
+}
 
 
 
