@@ -16775,7 +16775,7 @@ only screen and (max-width:1199px) {
     width: 100%;
     height: auto;
     border-radius: 15px;            /* rounded corners */
-    border: 3px solid #129078;      /* green border example */
+    border: 3px solid #a543a599;      /* green border example */
     box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* optional soft shadow */
     transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease, border 0.3s ease;
 }
@@ -40530,6 +40530,510 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 
 
 
+/* about */
+
+/* ====== SECTION WRAPPER ====== */
+.main-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* ====== COLUMNS ====== */
+.column {
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ====== LEFT COLUMN: TITLE & DESCRIPTION ====== */
+.section-title h2 {
+    color: #020101;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section-title h2 .highlight {
+    color: #B68F47; /* emphasized words */
+}
+
+.description strong {
+    font-weight: bold;
+}
+
+.description,
+.paragraph {
+    margin-top: 15px;
+}
+
+/* ====== MIDDLE COLUMN: IMAGE ====== */
+.column img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* ====== RIGHT COLUMN: NEWS TITLE ====== */
+.news-title h2 {
+    color: #B68F47;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* ====== NEWS SCROLLER BOX ====== */
+.news-container {
+    max-width: 100%;
+    overflow: hidden;
+    height: 350px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.news-container ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.news-container li {
+    list-style: none;
+    padding: 10px;
+}
+
+.newsscroller_title a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.scrollercontent {
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+/* ====== BUTTON ====== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #20282D;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.btn svg {
+    width: 10px;
+    height: 10px;
+    stroke: currentColor;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* about1 */
+
+
+/* GENERAL SECTION */
+.edu-about-area {
+    padding: 70px 0px; 
+    background-color: #f8f8f8;
+    /* font-family: 'Arial', sans-serif; */
+}
+
+/* CONTAINER */
+.edu-about-area .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* SECTION HEADING CENTER */
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading .pre-title {
+      display: block;
+    font-size: 22px;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-heading h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+
+
+/* .shape-line {
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #b88a45;
+    margin: 0 auto;
+    border-radius: 2px;
+} */
+.shape-line{color:black}
+/* ROW FLEX LAYOUT */
+.edu-about-area .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px; 
+}
+
+/* LEFT COLUMN */
+.col-left {
+    width: 40%; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.description {
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.paragraph {
+    color: #555;
+    line-height: 1.7;
+    font-size: 1em;
+}
+
+/* MIDDLE COLUMN */
+.col-image {
+    width: 35%; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.col-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15); 
+}
+
+/* RIGHT COLUMN */
+.col-news {
+    width: 25%; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* NEWS TITLE */
+.news-title h2 {
+    font-size: 22px;
+    color:black;
+    text-align: center;
+    padding: 15px 0 5px 0;
+    font-weight: 600;
+    margin-bottom: 15px;
+    
+}
+
+/* NEWS CONTAINER (The viewing window) */
+.news-container {
+    height: 350px; 
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    padding: 10px 0; 
+}
+
+/* NEWS LIST (The element that scrolls) */
+.news-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: scrollNews 12s linear infinite;
+}
+
+/* INDIVIDUAL SCROLL ITEM */
+.scrollercontent {
+    padding: 15px 20px;
+    margin: 0;
+    border-bottom: 1px dashed #e0e0e0;
+    font-size: 0.95em;
+    line-height: 1.4;
+    color: #444;
+    transition: background-color 0.3s;
+}
+
+.scrollercontent:last-child {
+    border-bottom: none;
+}
+
+.scrollercontent:hover {
+    background-color: #f5f5f5;
+}
+
+/* SCROLL ANIMATION */
+@keyframes scrollNews {
+    0% { top: 0; }
+    /* Moves content by exactly half its total height for a seamless loop */
+    100% { top: -50%; } 
+}
+
+
+/* BUTTON */
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .edu-about-area .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .col-left, .col-image, .col-news {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .col-image {
+        order: -1; 
+    }
+
+    .news-container {
+        height: 250px;
+        margin-top: 15px;
+    }
+}
+
+
+
+
+
+/* section */
+/* ===== Container ===== */
+.admission-process-container {
+    width: 100%;
+    background-color: #111;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.admission-process-container .container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* ===== Section Heading ===== */
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading .pre-title {
+    display: block;
+    color: #b88a45;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.section-heading h2.title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.section-heading .shape-line {
+    display: inline-block;
+    width: 60px;
+    height: 4px;
+    background-color: #b88a45;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+/* ===== Admission Process Card ===== */
+.admission-process-card {
+    width: 100%;
+    max-width: 1200px;
+    background: linear-gradient(135deg, #181818, #0a0a0a);
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.admission-process-card::before {
+    content: '';
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.8) 70%);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.card-subtitle {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== Steps Container ===== */
+/* Steps Container - Single Row */
+.process-steps {
+    display: flex;
+    justify-content: space-between; /* Spread buttons evenly */
+    flex-wrap: nowrap; /* No wrapping */
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* Step Button */
+.step {
+    flex: 1; /* Take equal width */
+    margin: 0 6px; /* Gap between buttons */
+    padding: 12px 0; /* Vertical padding */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ccc;
+    background-color: rgba(34,34,34,0.8);
+    border: 1px solid rgba(50,50,50,0.8);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.step:hover {
+    color: #fff;
+    background-color: rgba(50,50,50,0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* Active Step */
+.step-active {
+    background-color: #d63351; /* Red background */
+    border-color: #d63351;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(214,51,81,0.6);
+}
+
+
+/* ===== Individual Step Styling ===== */
+.step {
+    /* padding: 12px 20px; */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    /* color: #ccc; */
+    background-color: rgba(34,34,34,0.8);
+    border: 1px solid rgba(50,50,50,0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.step:hover {
+    color: #fff;
+    background-color: rgba(50,50,50,0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* ===== Clicked / Active Step ===== */
+.step-active {
+    background-color: #d63351;
+    border-color: #d63351;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(214,51,81,0.6);
+}
+
+.step-active:hover {
+    background-color: #e04b67;
+    box-shadow: 
+        0 0 5px rgba(255,255,255,0.8),
+        0 0 20px rgba(214,51,81,1),
+        0 0 40px rgba(214,51,81,0.8);
+    transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+.card-footer {
+    font-size: 14px;
+    margin-top: 30px;
+    color: #aaa;
+    position: relative;
+    z-index: 2;
+}
+
+.card-footer strong {
+    color: #fff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+    .process-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* category */
 
@@ -40684,6 +41188,7 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 /* Your original padding */
 .edu-section-gap {
     padding: 70px 0;   /* (same as you wrote before) */
+    background-color: #ffffff;
 }
 
 /* Tablet */
@@ -41014,12 +41519,8 @@ ease;
 }
 
 .section-title .shape-line i {
-    display: inline-block;
-    width: 60px;
-    height: 3px;
-    background-color: var(--color-primary);
-    border-radius: 3px;
-    margin-top: 10px;
+      display: block;
+    color: var(--color-primary);
 }
 
 /* Maps & Form Container */
