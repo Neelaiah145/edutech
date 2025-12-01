@@ -455,131 +455,78 @@
         <!-- end-about course -->
 
         <!-- start section -->
-
         <div id="rs-institute-services" class="rs-institute-services section-gap">
             <div class="container">
 
+                <!-- Section Title -->
                 <div class="section-title section-center">
-                    <span class="pre-title">Institute Services</span>
+                    <span class="pre-title">What We Provide</span>
                     <h2 class="title">Empowering Students with Skills & Opportunities</h2>
                     <span class="shape-line"><i class="icon-19"></i></span>
                 </div>
 
+                <!-- Services Cards Grid -->
                 <div class="services-card-grid">
 
                     <!-- CARD 1 -->
                     <div class="service-card">
                         <img src="assets/images/ser/sers1.png" alt="Mock Interviews">
                         <h3>Mock Interviews</h3>
-
-                        <p class="short-text">
-                            Prepare students for real interviews with practice sessions and expert guidance.
-                        </p>
-
-                        <p class="full-text">
-                            Our sessions include technical rounds, HR rounds, group discussions, and case studies.
-                            Students receive personalized feedback for communication, confidence, and problem-solving.
-                            We also help with resume building, tricky question handling, and stress management.
-                        </p>
-                        <div class="read-more-btn">
-                            <a class="edu-btn btn-small btn-secondary" href="#">Read More <i class="icon-4"></i></a>
-                        </div>
+                        <ul class="features-list">
+                            <li>Technical & HR interview practice</li>
+                            <li>Group discussions & case studies</li>
+                            <li>Resume & communication guidance</li>
+                        </ul>
                     </div>
 
                     <!-- CARD 2 -->
                     <div class="service-card">
                         <img src="assets/images/ser/sers2.png" alt="Online Classes">
                         <h3>Online Classes</h3>
-
-                        <p class="short-text">
-                            Flexible, interactive virtual learning from anywhere with expert instructors.
-                        </p>
-
-                        <p class="full-text">
-                            Includes real-time engagement, quizzes, recordings, forums, and mentoring.
-                            Students gain conceptual clarity through digital tools designed for modern learning.
-                        </p>
-
-                        <div class="read-more-btn">
-                            <a class="edu-btn btn-small btn-secondary" href="#">Read More <i class="icon-4"></i></a>
-                        </div>
+                        <ul class="features-list">
+                            <li>Flexible virtual learning</li>
+                            <li>Quizzes, recordings, & mentoring</li>
+                            <li>Interactive digital tools</li>
+                        </ul>
                     </div>
 
                     <!-- CARD 3 -->
                     <div class="service-card">
                         <img src="assets/images/ser/sers3.png" alt="Offline Classes">
                         <h3>Offline Classes</h3>
-
-                        <p class="short-text">
-                            Hands-on, practical learning with in-person workshops and instructor guidance.
-                        </p>
-
-                        <p class="full-text">
-                            Classroom interactions build collaboration, critical thinking, and practical skills.
-                            Students get access to labs, group projects, and real-world examples.
-                        </p>
-
-                        <div class="read-more-btn">
-                            <a class="edu-btn btn-small btn-secondary" href="#">Read More <i class="icon-4"></i></a>
-                        </div>
+                        <ul class="features-list">
+                            <li>Hands-on workshops</li>
+                            <li>Lab access & group projects</li>
+                            <li>Practical skill development</li>
+                        </ul>
                     </div>
 
                     <!-- CARD 4 -->
                     <div class="service-card">
                         <img src="assets/images/ser/sers4.png" alt="Placement Drives">
                         <h3>Placement Drives</h3>
-
-                        <p class="short-text">
-                            Direct access to top companies through campus and virtual recruitment drives.
-                        </p>
-
-                        <p class="full-text">
-                            Includes resume support, mock interviews, soft skills, and company insights.
-                            Students gain job opportunities with strong industry connections.
-                        </p>
-
-                        <div class="read-more-btn">
-                            <a class="edu-btn btn-small btn-secondary" href="#">Read More <i class="icon-4"></i></a>
-                        </div>
+                        <ul class="features-list">
+                            <li>Campus & virtual recruitment</li>
+                            <li>Resume & soft skill support</li>
+                            <li>Strong industry connections</li>
+                        </ul>
                     </div>
 
                     <!-- CARD 5 -->
                     <div class="service-card">
                         <img src="assets/images/ser/sers5.png" alt="Career Guidance">
                         <h3>Career Guidance</h3>
-
-                        <p class="short-text">
-                            Personalized career mentoring to help students choose the right path.
-                        </p>
-
-                        <p class="full-text">
-                            Includes strength analysis, job trends, higher studies options, and planning.
-                            Helps students build a clear roadmap for long-term success.
-                        </p>
-                        <div class="read-more-btn">
-                            <a class="edu-btn btn-small btn-secondary" href="#">Read More <i class="icon-4"></i></a>
-                        </div>
+                        <ul class="features-list">
+                            <li>Personalized career mentoring</li>
+                            <li>Strength & opportunity analysis</li>
+                            <li>Long-term roadmap planning</li>
+                        </ul>
                     </div>
 
                 </div>
             </div>
         </div>
 
-        <script>
-            document.querySelectorAll(".read-more-btn a").forEach(btn => {
-                btn.addEventListener("click", (e) => {
-                    e.preventDefault(); // Prevent link navigation
-
-                    let card = btn.closest(".service-card");
-                    card.classList.toggle("active");
-
-                    // Change button text
-                    btn.innerHTML = card.classList.contains("active")
-                        ? "Read Less <i class='icon-4'></i>"
-                        : "Read More <i class='icon-4'></i>";
-                });
-            });
-        </script>
 
 
 
@@ -767,16 +714,15 @@
         <!-- End Team Area  -->
 
         <!-- Start Brand Area  -->
-        <div class="partner-section">
+        <!-- <div class="partner-section">
             <div class="container">
-                <!-- Heading -->
+                
                 <div class="section-header text-center">
                     <h2>Partner Companies</h2>
                     <p>We work with reputable educational partners to offer updated, practical, and career-oriented
                         courses for every learner.</p>
                 </div>
 
-                <!-- Logo Marquee / Grid -->
                 <div class="partner-logos-wrapper">
                     <div class="partner-logos">
                         <div class="logo-item"><img src="assets/images/brand/brand11.png" alt="Brand 1"></div>
@@ -790,7 +736,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
 
@@ -800,34 +746,52 @@
         <!-- tesminaol -->
         <!-- marquee -->
         <div class="news-fullwidth">
-            <marquee class="marquee-news" behavior="scroll" direction="left" scrollamount="5">
+            <div class="news-container">
+                <!-- Heading / Label -->
+                <div class="news-header">
+                    <span class="updates-label">Updates</span>
+                </div>
 
-                <span class="news-item">
-                    <strong>Python Bootcamp:</strong> Starts 10th Dec |
-                </span>
+                <!-- Marquee / Ticker -->
+                <div class="marquee-wrapper">
+                    <div class="marquee-content">
+                        <!-- Original items -->
+                        <span class="news-item"><strong>Python Bootcamp:</strong> Starts 10th Dec | 20,999 | 10%
+                            off!</span>
+                        <span class="news-item"><strong>Java Full Stack:</strong> Starts 15th Dec | 39,999 | Early bird
+                            15%</span>
+                        <span class="news-item"><strong>Data Science with AI:</strong> Starts 20th Dec | 49,999 |
+                            Limited
+                            seats!</span>
+                        <span class="news-item"><strong>C++ Certification:</strong> Starts 5th Jan | 19,999 | 5%
+                            off</span>
+                        <span class="news-item"><strong>Mobile App Development:</strong> Starts 10th Jan | 34,999 | Save
+                            10%</span>
+                        <span class="news-item"><strong>Cloud Computing:</strong> Starts 15th Jan | 44,999 | Special
+                            20%</span>
 
-                <span class="news-item">
-                    <strong>Java Full Stack:</strong> Starts 15th Dec |
-                </span>
-
-                <span class="news-item">
-                    <strong>Data Science with AI:</strong> Starts 20th Dec |
-                </span>
-
-                <span class="news-item">
-                    <strong>C++ Certification:</strong> Starts 5th Jan |
-                </span>
-
-                <span class="news-item">
-                    <strong>Mobile App Development:</strong> Starts 10th Jan |
-                </span>
-
-                <span class="news-item">
-                    <strong>Cloud Computing:</strong> Starts 15th Jan |
-                </span>
-
-            </marquee>
+                        <!-- Duplicate items for seamless scroll -->
+                        <span class="news-item"><strong>Python Bootcamp:</strong> Starts 10th Dec | 20,999 | 10%
+                            off!</span>
+                        <span class="news-item"><strong>Java Full Stack:</strong> Starts 15th Dec | 39,999 | Early bird
+                            15%</span>
+                        <span class="news-item"><strong>Data Science with AI:</strong> Starts 20th Dec | 34,999 |
+                            Limited
+                            seats!</span>
+                        <span class="news-item"><strong>C++ Certification:</strong> Starts 5th Jan | 19,999 | 5%
+                            off</span>
+                        <span class="news-item"><strong>Mobile App Development:</strong> Starts 10th Jan | $349 | Save
+                            10%</span>
+                        <span class="news-item"><strong>Cloud Computing:</strong> Starts 15th Jan | 44,999 | Special
+                            20%</span>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
+
 
 
 
@@ -842,7 +806,7 @@
 
                 <!-- Section Heading -->
                 <div class="section-heading white-heading">
-                    <span class="pre-title">Coaching Programs</span>
+                    <span class="pre-title">Enroll Here</span>
                     <h2 class="title">Skill Development Roadmap at Education Academy</h2>
                     <span class="shape-line"><i class="icon-19"></i></span>
                 </div>
@@ -1164,7 +1128,7 @@
                             <div class="edu-footer-widget">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img class="logo-light" src="assets/images/l/image.png" alt="Corporate Logo">
+                                        <img class="logo-light" src="assets/images/lo/foot12.png" alt="Corporate Logo">
                                         <img class="logo-dark" src="assets/images/logo/logo-white.png"
                                             alt="Corporate Logo">
                                     </a>
@@ -1217,8 +1181,7 @@
                             <div class="edu-footer-widget">
                                 <h4 class="widget-title">Contacts</h4>
                                 <div class="inner">
-                                    <p class="description">Enter your email address to register to our newsletter
-                                        subscription</p>
+                                   
                                     <ul class="information-list">
                                         <li><span>Add:</span>1St floor, Hyderabad</li>
                                         <li><span>Call:</span><a href="tel:+011235641231">+91 987456321</a></li>

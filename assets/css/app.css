@@ -20,9 +20,9 @@
     --bg-color-2: #1c242f;
     --color-white: #fff;
     --color-black: #000;
-    --footer-text: #181818;
-    --dark-footer-text: gray;
-    --edu-btn-color: #fff;
+    --footer-text: #eeecec;
+    --dark-footer-text: rgb(233, 225, 225);
+    --edu-btn-color: #edeaea;
     --color-title: #bababa;
     --color-lighten01: #f0f4f5;
     --color-lighten02: #edf5f8;
@@ -3338,7 +3338,7 @@ input[type="radio"]:checked~label::before {
     text-align: center;
     line-height: 46px;
     font-size: 24px;
-    color: var(--color-secondary);
+    color: black;
     left: 0;
     top: 0;
     height: 46px;
@@ -40632,7 +40632,7 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 .news-container {
     max-width: 100%;
     overflow: hidden;
-    height: 350px;
+    height: 110px;
     position: relative;
     margin-top: 20px;
 }
@@ -40739,8 +40739,8 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 
 /* LEFT COLUMN (Text) */
 .col-left {
-    width: 50%;          /* Expanded for cleaner reading */
-    padding: 20px;
+    width: 50%;        
+    padding: 0px;
 }
 
 .description {
@@ -40759,7 +40759,7 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 /* RIGHT COLUMN (Image) */
 .col-image {
     width: 45%;           /* Adjusted width to balance layout */
-    padding: 20px;
+    padding: 0px;
 }
 
 .col-image img {
@@ -40949,6 +40949,261 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
         background: linear-gradient(to bottom, #d63333, #555);
     }
 }
+
+
+
+
+
+
+
+
+
+
+/* marwuqq */
+.news-fullwidth {
+    background-color: #1a1a1a; /* dark background */
+    color: #fff;
+    padding: 8px 0; /* compact height */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.news-container {
+    width: 1200px; /* fixed width */
+}
+
+.news-header {
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.updates-label {
+    font-weight: bold;
+    color: #fff; /* white text */
+    font-size: 14px;
+    line-height: 22px;
+    display: inline-block;
+    background-color: #ff0000; /* red background */
+    padding: 0 10px;
+    border-radius: 3px;
+    height: 22px;
+}
+
+/* Marquee wrapper */
+.marquee-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Marquee animation */
+.marquee-content {
+    display: inline-block;
+    animation: marquee-left 40s linear infinite; /* uniform speed */
+}
+
+/* Keyframes for left-to-right scrolling */
+@keyframes marquee-left {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); } /* move half of content width because items are duplicated */
+}
+
+/* Individual items */
+.news-item {
+    display: inline-block;
+    margin-right: 35px; /* spacing between items */
+    font-size: 15px;
+    color: #fff;
+}
+
+.news-item strong {
+    color: #ffd700; /* golden highlight */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .news-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        margin-right: 25px;
+        font-size: 13px;
+    }
+
+    .updates-label {
+        font-size: 12px;
+        padding: 0 8px;
+        line-height: 22px;
+        height: 22px;
+    }
+}
+
+
+
+/* footer */
+
+/* ===========================
+   Footer Styling - Dark & Smoke White
+=========================== */
+.edu-footer {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer Top - Dark Blurred Background */
+.edu-footer.footer-lighten .footer-top {
+    padding: 70px 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* Footer Widgets */
+.edu-footer-widget {
+    margin-bottom: 30px;
+}
+
+/* Logo */
+.edu-footer-widget .logo img {
+    max-width: 150px;
+    margin-bottom: 15px;
+        max-width: 100%;
+    width: 100%;
+}
+
+/* Description Text */
+.edu-footer-widget .description {
+    font-size: 14px;
+    color: #eeeeee; /* smoke white */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Social Icons */
+.widget-information ul.social-share {
+    display: flex;
+    gap: 12px;
+}
+
+.widget-information ul.social-share li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: #eeeeee; /* smoke white */
+    font-size: 16px;
+    background: rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+}
+
+.widget-information ul.social-share li a:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* Footer Titles - Pure White */
+.edu-footer-widget h4.widget-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff; /* pure white */
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.edu-footer-widget h4.widget-title::after {
+   
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #ffffff; /* pure white */
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+/* Footer Links - Smoke White */
+.footer-link li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.footer-link li a {
+    color: #eeeeee; /* smoke white */
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.footer-link li a:hover {
+    color: #cccccc;
+}
+
+/* Contact Info - Smoke White */
+.information-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.information-list li {
+    font-size: 14px;
+    color: #eeeeee; /* smoke white */
+    margin-bottom: 8px;
+}
+
+.information-list li span {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.information-list li a {
+    color: #eeeeee; /* smoke white */
+    text-decoration: none;
+}
+
+.information-list li a:hover {
+    color: #cccccc;
+}
+
+/* Copyright Area - Smoke White */
+.copyright-area {
+    padding: 20px 0;
+    background: rgba(0,0,0,0.95);
+    text-align: center;
+    font-size: 13px;
+    color: #eeeeee; /* smoke white */
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.copyright-area a {
+    color: #eeeeee; /* smoke white */
+    text-decoration: none;
+}
+
+.copyright-area a:hover {
+    color: #cccccc;
+}
+
+/* Responsive */
+@media(max-width: 991px) {
+    .widget-information ul.social-share {
+        justify-content: flex-start;
+    }
+}
+
+@media(max-width: 768px) {
+    .edu-footer.footer-lighten .footer-top {
+        padding: 50px 15px;
+    }
+}
+
+
+
 
 
 
@@ -41314,7 +41569,7 @@ textarea {
 }
 
 .news-item strong {
-    color: #ffb800;
+    color: #ff8800;
 }
 
 
@@ -41331,127 +41586,123 @@ textarea {
 /* ==============================
    INSTITUTE SERVICE CARDS
 ============================== */
-
+/* ===========================
+   RS Institute Services
+=========================== */
+/* ===========================
+   RS Institute Services
+=========================== */
 #rs-institute-services {
     padding: 70px 0px;
-    background: #f9f9f9;
+ 
 }
 
 /* Section Title */
 #rs-institute-services .section-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
-#rs-institute-services .section-title .pre-title {
-    
-    font-weight: 22px;
+#rs-institute-services .pre-title {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 22px;
     text-transform: uppercase;
+   
     letter-spacing: 1px;
+    margin-bottom: 8px;
 }
 
-#rs-institute-services .section-title .title {
+#rs-institute-services .title {
     font-size: 22px;
     font-weight: 700;
     color: #111;
+    margin-bottom: 10px;
 }
 
-/* GRID */
+
+
+/* Services Cards Grid */
 .services-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* smaller card width */
-    gap: 25px;
-    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
 }
 
-/* CARD */
+/* Service Card */
 .service-card {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
     overflow: hidden;
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 400px; /* ensures consistency */
+    justify-content: flex-start;
+    min-height: 300px; /* reduced height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
-/* IMAGE */
+/* Card Image */
 .service-card img {
     width: 100%;
-    height: 180px;
+    height: 140px; /* compact height */
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
-/* TITLE */
+/* Card Title */
 .service-card h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
     color: #111;
 }
 
-/* TEXT */
-.service-card p {
-    font-size: 14px;
-    line-height: 1.6;
+/* Features List */
+.features-list {
+    list-style: disc;
+    padding-left: 18px;
+}
+
+.features-list li {
+    font-size: 13px;
     color: #555;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
-/* Full text hidden initially */
-.service-card .full-text {
-    display: none;
-}
-
-/* Show full text when active */
-.service-card.active .full-text {
-    display: block;
-}
-
-.service-card.active .short-text {
-    display: none;
-}
-
-/* ==============================
-   READ MORE BUTTON
-============================== */
-.read-more-btn {
-    margin-top: auto;
-    text-align: center;
-}
-
-.read-more-btn .edu-btn {
-    display: inline-block;
-    background: #000; /* black button */
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 6px;
-    padding: 10px 18px;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    position: relative;
-}
-
-
-
-/* RESPONSIVE */
-@media(max-width: 991px) {
+/* Responsive Design */
+@media(max-width: 1200px) {
     .services-card-grid {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
     .service-card img {
-        height: 160px;
+        height: 130px;
+    }
+}
+
+@media(max-width: 991px) {
+    .services-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .service-card img {
+        height: 120px;
+    }
+}
+
+@media(max-width: 768px) {
+    .services-card-grid {
+        gap: 15px;
+    }
+    .service-card img {
+        height: 110px;
     }
 }
 
@@ -41459,10 +41710,19 @@ textarea {
     .services-card-grid {
         grid-template-columns: 1fr;
     }
+    .service-card {
+        min-height: 250px;
+    }
     .service-card img {
-        height: 140px;
+        height: 100px;
     }
 }
+
+
+
+
+
+
 
 
 
@@ -42052,4 +42312,48 @@ ease;
     .contact-form button {
         width: 100%;
     }
+}
+/* Footer Links - Smoke White normally, Pure White on Hover */
+.footer-link li a {
+    color: #eeeeee; /* smoke white */
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-link li a:hover {
+    color: #ffffff !important; /* pure white on hover */
+}
+
+/* Contact Info - Smoke White normally, Pure White on Hover */
+.information-list li a {
+    color: #eeeeee; /* smoke white */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.information-list li a:hover {
+    color: #ffffff; /* pure white on hover */
+}
+
+/* Social Icons - Smoke White normally, Pure White on Hover */
+.widget-information ul.social-share li a {
+    color: #eeeeee; /* smoke white */
+    background: rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+}
+
+.widget-information ul.social-share li a:hover {
+    color: #ffffff; /* pure white on hover */
+    background: rgba(255,255,255,0.2); /* slightly brighter background */
+}
+/* Contact Links */
+.information-list li a {
+    color: #eeeeee; /* smoke white */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.information-list li a:hover {
+    color: #ffffff !important; /* pure white on hover */
 }
