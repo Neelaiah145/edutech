@@ -1,0 +1,165 @@
+
+        <div class="roadmap-container">
+
+            <div class="curved-road"></div>
+
+            <!-- SVG curved connection line -->
+            <svg class="roadmap-connection" width="100%" height="500"
+                style="position:absolute; top:0; left:0; z-index:2;">
+                <path d="M 10% 60% C 26% 35%, 42% 70%, 58% 40%, 74% 28%, 86% 60%" stroke="#fff" stroke-width="4"
+                    fill="none" stroke-dasharray="10,10" />
+            </svg>
+
+            <!-- STEP POINTS -->
+            <div class="roadmap-nodes">
+                <div class="roadmap-node active" data-name="Explore Courses">
+                    <a href="#step1" class="edu-btn step">Explore Courses</a>
+                </div>
+                <div class="roadmap-node" data-name="Attend Orientation">
+                    <a href="#step2" class="edu-btn step">Attend Orientation</a>
+                </div>
+                <div class="roadmap-node" data-name="Select Program">
+                    <a href="#step3" class="edu-btn step">Select Program</a>
+                </div>
+                <div class="roadmap-node" data-name="Submit Documents">
+                    <a href="#step4" class="edu-btn step">Submit Documents</a>
+                </div>
+                <div class="roadmap-node" data-name="Receive ID">
+                    <a href="#step5" class="edu-btn step">Receive ID</a>
+                </div>
+                <div class="roadmap-node" data-name="Start Learning">
+                    <a href="#step6" class="edu-btn step">Start Learning</a>
+                </div>
+            </div>
+
+            <!-- STEP DETAILS -->
+            <div class="roadmap-content">
+                <div id="step1" class="step-detail active">
+                    <h3>Explore Available Courses</h3>
+                    <p>Check our list of career-oriented programs and select your ideal course.</p>
+                </div>
+                <div id="step2" class="step-detail">
+                    <h3>Attend Orientation</h3>
+                    <p>Understand class schedules, syllabus, and career scope.</p>
+                </div>
+                <div id="step3" class="step-detail">
+                    <h3>Select Your Program</h3>
+                    <p>Choose Java, Python, Web Development, Data Science or any preferred course.</p>
+                </div>
+                <div id="step4" class="step-detail">
+                    <h3>Submit Required Documents</h3>
+                    <p>Provide ID proof, academic records, and application form.</p>
+                </div>
+                <div id="step5" class="step-detail">
+                    <h3>Receive Enrollment ID</h3>
+                    <p>Your student portal and ID will be activated.</p>
+                </div>
+                <div id="step6" class="step-detail">
+                    <h3>Start Learning Skills</h3>
+                    <p>Begin interactive training with expert mentors.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- JAVASCRIPT -->
+        <script>
+            const nodes = document.querySelectorAll('.roadmap-node');
+            const details = document.querySelectorAll('.step-detail');
+
+            nodes.forEach((node, index) => {
+                node.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    // Active highlight move
+                    nodes.forEach(n => n.classList.remove('active'));
+                    node.classList.add('active');
+
+                    // Change content
+                    details.forEach(d => d.classList.remove('active'));
+                    details[index].classList.add('active');
+                });
+            });
+        </script>
+        <div class="roadmap-container">
+
+            <div class="curved-road"></div>
+
+            <!-- SVG curved connection line -->
+            <svg class="roadmap-connection" width="100%" height="500"
+                style="position:absolute; top:0; left:0; z-index:2;">
+                <path d="M 10% 60% C 26% 35%, 42% 70%, 58% 40%, 74% 28%, 86% 60%" stroke="#fff" stroke-width="4"
+                    fill="none" stroke-dasharray="10,10" />
+            </svg>
+
+            <!-- STEP POINTS -->
+            <div class="roadmap-nodes">
+                <div class="roadmap-node active" data-name="Explore Courses">
+                    <a href="#step1" class="edu-btn step">Explore Courses</a>
+                </div>
+                <div class="roadmap-node" data-name="Attend Orientation">
+                    <a href="#step2" class="edu-btn step">Attend Orientation</a>
+                </div>
+                <div class="roadmap-node" data-name="Select Program">
+                    <a href="#step3" class="edu-btn step">Select Program</a>
+                </div>
+                <div class="roadmap-node" data-name="Submit Documents">
+                    <a href="#step4" class="edu-btn step">Submit Documents</a>
+                </div>
+                <div class="roadmap-node" data-name="Receive ID">
+                    <a href="#step5" class="edu-btn step">Receive ID</a>
+                </div>
+                <div class="roadmap-node" data-name="Start Learning">
+                    <a href="#step6" class="edu-btn step">Start Learning</a>
+                </div>
+            </div>
+
+            <!-- STEP DETAILS -->
+            <div class="roadmap-content">
+                <div id="step1" class="step-detail active">
+                    <h3>Explore Available Courses</h3>
+                    <p>Check our list of career-oriented programs and select your ideal course.</p>
+                </div>
+                <div id="step2" class="step-detail">
+                    <h3>Attend Orientation</h3>
+                    <p>Understand class schedules, syllabus, and career scope.</p>
+                </div>
+                <div id="step3" class="step-detail">
+                    <h3>Select Your Program</h3>
+                    <p>Choose Java, Python, Web Development, Data Science or any preferred course.</p>
+                </div>
+                <div id="step4" class="step-detail">
+                    <h3>Submit Required Documents</h3>
+                    <p>Provide ID proof, academic records, and application form.</p>
+                </div>
+                <div id="step5" class="step-detail">
+                    <h3>Receive Enrollment ID</h3>
+                    <p>Your student portal and ID will be activated.</p>
+                </div>
+                <div id="step6" class="step-detail">
+                    <h3>Start Learning Skills</h3>
+                    <p>Begin interactive training with expert mentors.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- JAVASCRIPT -->
+        <script>
+            const nodes = document.querySelectorAll('.roadmap-node');
+            const details = document.querySelectorAll('.step-detail');
+
+            nodes.forEach((node, index) => {
+                node.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    // Active highlight move
+                    nodes.forEach(n => n.classList.remove('active'));
+                    node.classList.add('active');
+
+                    // Change content
+                    details.forEach(d => d.classList.remove('active'));
+                    details[index].classList.add('active');
+                });
+            });
+        </script>

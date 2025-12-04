@@ -1920,21 +1920,21 @@ select {
     cursor: pointer
 }
 
-input[type="text"],
+/* input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="number"],
 input[type="tel"],
 textarea {
     font-size: 15px;
-    background-color: var(--color-white);
+    background-color: var(--color-black);
     box-shadow: none;
     padding: 0 25px;
     outline: none;
     border: none;
     border-radius: 5px;
-    color: var(--color-heading)
-}
+    color: white !important;
+} */
 
 input[type="text"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder,
@@ -4107,7 +4107,7 @@ button.edu-btn {
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.35); /* light white gloss */
-    transform: skewX(-25deg);
+    /* transform: skewX(-25deg); */
 }
 
 /* Hover – Shine Moves Across */
@@ -15698,14 +15698,7 @@ body .tpd-size-medium .tpd-content {
 }
 .features-area-2 {
     /* Black-to-white gradient for a monochrome look */
-    background: linear-gradient(
-        145deg,
-        #000000 0%,    /* pure black */
-        #1a1a1a 25%,   /* dark gray */
-        #333333 50%,   /* medium gray */
-        #666666 75%,   /* light gray */
-        #ffffff 100%   /* pure white */
-    );
+   background: rgba(0, 0, 0, 0.85);
     color: #ffffff;       /* white text for contrast */
     padding: 80px 20px;
     text-align: center;
@@ -31384,7 +31377,7 @@ only screen and (min-width:1401px) and (max-width:1750px) {
 }
 
 .edu-footer .copyright-area a {
-    color: var(--color-primary);
+    
     -webkit-transition: background 0.2s linear;
     transition: background 0.2s linear
 }
@@ -31412,13 +31405,8 @@ only screen and (min-width:1401px) and (max-width:1750px) {
     border-top: 1px solid #1f2020
 }
 
-.footer-lighten .copyright-area {
-    background-color: #ebeff0
-}
 
-.footer-lighten .copyright-area p {
-    color: var(--color-black)
-}
+
 
 .footer-light .copyright-area {
     background-color: var(--color-white);
@@ -33221,7 +33209,7 @@ blockquote .author {
 
 @media only screen and (max-width:767px) {
     .section-gap-large {
-        padding: 75px 0 80px
+        padding: 70px 0px;
     }
 }
 
@@ -40462,7 +40450,7 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 
 /* ===== FEATURES SECTION ===== */
 .features-area-2 {
-    padding: 70px 0px;
+    padding: 30px 0px;
 .hero-banner {
     background: linear-gradient(90deg, #1ab69d 0%, #129078 100%);
     color: #fff;
@@ -40532,9 +40520,12 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 }
 
 .features-box.features-style-2 .content .title span {
-    font-weight: 700;
-    color: #ff8800; /* Highlight color */
+    font-weight: 900 !important; 
+    color: #ff8800;               
+    font-size: 28px;             
+    letter-spacing: 1px;          
 }
+
 
 /* SVG color */
 .features-box.features-style-2 .edublink-svg-animate svg path {
@@ -40732,7 +40723,7 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 .edu-about-area .row {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     gap: 40px; 
     flex-wrap: nowrap;
 }
@@ -40813,144 +40804,191 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 /* =========================
    ADMISSION / ROADMAP SECTION
 ============================ */
+/* ===============================
+   SECTION STYLING
+=============================== */
+/* ===============================
+   GLOBAL STYLES (Adjust as needed)
+=============================== */
+
 #admission-process {
-    padding: 70px 0px;
-    background: #1a1a1a; 
+    padding: 70px 0;
+    background: #000;
     color: #fff;
-    
+    font-family: Arial, sans-serif;
 }
 
-/* Section Heading */
-#admission-process .section-heading {
+/* HEADER */
+.section-title.section-center-white {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
-#admission-process .section-heading .pre-title {
+.section-title.section-center-white .pre-title-white {
     display: block;
     font-size: 22px;
-    font-weight: 600;
-    text-transform: uppercase;
     color: #fff;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 
-#admission-process .section-heading .title {
+.section-title.section-center-white h2.title-white {
     font-size: 22px;
     font-weight: 700;
     color: #fff;
     margin-bottom: 10px;
 }
 
-#admission-process .section-heading .shape-line i {
+.section-title.section-center-white .shape-line i {
     color: #fff;
+    font-size: 20px;
 }
 
-/* Roadmap container */
-.roadmap-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-
-/* Nodes in row with connecting line */
-.roadmap-nodes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    position: relative;
+/* ROADMAP WRAPPER */
+.real-roadmap {
     width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 50px;
+    position: relative;
 }
 
-/* Connecting tapered line behind steps */
-.roadmap-nodes::before {
-    content: '';
+/* ROAD IMAGE */
+.road-image {
+    width: 70%;
+    opacity: 0.95;
+    filter: drop-shadow(0 0 25px #000);
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* NODES */
+.node {
+    width: 55px;
+    height: 55px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(to right, #d63333, #555);
-    transform: translateY(-50%);
-    z-index: 1;
-    border-radius: 2px;
-}
-
-/* Roadmap Node */
-.roadmap-node {
-    position: relative;
-    z-index: 2; /* above line */
-    text-align: center;
-    flex: 1;
     display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-.roadmap-node .step {
-    display: inline-block;
-    padding: 0px 17px;
-    border-radius: 50px;
-    background: #000;
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
+    cursor: pointer;
     transition: all 0.3s ease;
     z-index: 2;
 }
 
-.roadmap-node.active .step,
-.roadmap-node .step:hover {
-    background: #d63333;
-    color: #fff;
-    box-shadow: 0 4px 15px rgba(214, 51, 51, 0.5);
+.node:hover {
+    transform: scale(1.2);
 }
 
-/* Step Content */
+.node.active {
+    background: #ffda6b;
+    color: #000;
+    box-shadow: 0 0 20px #ffda6b;
+    border-color: #ffda6b;
+}
+
+/* STEP CONTENT */
 .roadmap-content {
-    margin-top: 40px;
-    max-width: 700px;
     text-align: center;
+    color: #fff;
+    margin-top: 30px;
 }
 
+.roadmap-content h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.roadmap-content p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* LISTS WITH CHECKMARKS */
+.roadmap-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px auto;
+    display: inline-block;
+    text-align: left;
+}
+
+.roadmap-content ul li {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.roadmap-content ul li::before {
+    content: "\2713"; /* Checkmark */
+    color: #ffda6b;   /* Accent color */
+    font-weight: bold;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/* STEP DETAIL ANIMATION */
 .step-detail {
     display: none;
+    animation: fade 0.4s ease;
 }
 
 .step-detail.active {
     display: block;
 }
 
-.step-detail h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 10px;
+@keyframes fade {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.step-detail p {
-    font-size: 15px;
-    color: #ddd;
-    line-height: 1.5;
+/* NODE POSITIONS DESKTOP */
+.n1 { top: 81%; left: 23%; }
+.n2 { top: 68%; left: 44%; }
+.n3 { top: 56%; left: 63%; }
+.n4 { top: 39%; left: 45%; }
+.n5 { top: 23%; left: 60%; }
+.n6 { top: 3%;  left: 68%; }
+
+/* RESPONSIVE NODE POSITIONS */
+
+/* TABLETS */
+@media (max-width: 992px) {
+    .node { width: 50px; height: 50px; font-size: 16px; }
+    .n1 { top: 78%; left: 20%; }
+    .n2 { top: 65%; left: 42%; }
+    .n3 { top: 53%; left: 60%; }
+    .n4 { top: 38%; left: 43%; }
+    .n5 { top: 24%; left: 57%; }
+    .n6 { top: 8%;  left: 70%; }
 }
 
-/* Responsive */
+/* MOBILES */
 @media (max-width: 768px) {
-    .roadmap-nodes {
-        flex-direction: column;
-    }
-    .roadmap-nodes::before {
-        width: 4px;
-        height: 100%;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        background: linear-gradient(to bottom, #d63333, #555);
-    }
+    .node { width: 40px; height: 40px; font-size: 14px; }
+    .n1 { top: 74%; left: 18%; }
+    .n2 { top: 63%; left: 38%; }
+    .n3 { top: 52%; left: 58%; }
+    .n4 { top: 37%; left: 42%; }
+    .n5 { top: 22%; left: 55%; }
+    .n6 { top: 6%;  left: 68%; }
+
+    .road-image { width: 90%; } /* Slightly larger on small screens */
 }
-
-
 
 
 
@@ -41049,7 +41087,7 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
    Footer Styling - Dark & Smoke White
 =========================== */
 .edu-footer {
-    font-family: 'Arial', sans-serif;
+   
     position: relative;
     z-index: 1;
 }
@@ -41059,7 +41097,6 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     padding: 70px 0;
     background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(12px);
-    border-radius: 12px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.3);
 }
 
@@ -41075,6 +41112,27 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
         max-width: 100%;
     width: 100%;
 }
+/* Footer Logo - Responsive */
+.edu-footer-widget .logo img {
+    width: 150px;       /* default width on desktop */
+    max-width: 100%;    /* never exceed container width */
+    height: auto;       /* maintain aspect ratio */
+    display: block;     /* remove extra inline spacing */
+    margin-bottom: 15px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .edu-footer-widget .logo img {
+        width: 120px;   /* slightly smaller on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .edu-footer-widget .logo img {
+        width: 100px;   /* small logo on mobile */
+    }
+}
 
 /* Description Text */
 .edu-footer-widget .description {
@@ -41087,7 +41145,7 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 /* Social Icons */
 .widget-information ul.social-share {
     display: flex;
-    gap: 12px;
+    gap: 0px;
 }
 
 .widget-information ul.social-share li a {
@@ -41300,7 +41358,7 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 .testi-item {
     flex: 0 0 400px;
     scroll-snap-align: start;
-    background: linear-gradient(299deg, rgba(34,34,34,0.85) 0%, rgba(64,64,64,0.75) 100%);
+    background: #222222E6;
     padding: 15px 20px;
     border-radius: 10px;
     min-height: 200px;
@@ -41415,24 +41473,92 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     }
 }
 
+/* Carousel wrapper: add space for buttons */
+.testimonial-carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-left: 50px;  /* space for left button */
+    padding-right: 50px; /* space for right button */
+    box-sizing: border-box;
+}
+
+/* Carousel buttons: position outside cards */
+.carousel-btn.prev {
+    left: 0; /* keep outside card */
+}
+
+.carousel-btn.next {
+    right: 0; /* keep outside card */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .testimonial-carousel-wrapper {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonial-carousel-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 
 
 
 
-/* contacts form */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT SECTION MAIN WRAPPER */
+/* SECTION HEADING */
+
+
+/* CONTACT SECTION */
 .contact-info-area {
     padding: 30px 0;
-    background: #f0f2f5;
     font-family: Arial, sans-serif;
 }
 
-/* LEFT SIDE CARD */
+/* CONTAINER WIDTH */
+.contact-info-area .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ROW WITH GAP */
+.contact-info-area .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 25px; /* gap between cards */
+}
+
+/* LEFT CARD - Contact Info */
 .features-card {
-    background: #ffffff;
+    flex: 1;
+    background: #ffffff; /* Slightly different from form */
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    margin-bottom: 10px;
     min-height: 100%;
 }
 
@@ -41444,9 +41570,22 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
 }
 
 .detail-icon {
-    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: #cfd4d626; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    overflow: hidden;
     margin-right: 15px;
-    color: #0ecd73;
+}
+
+.detail-icon img {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
 }
 
 .detail-text h4 {
@@ -41461,9 +41600,10 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     color: #555;
 }
 
-/* RIGHT SIDE FORM */
+/* RIGHT CARD - Message Form */
 .form-card {
-    background: rgba(34,34,34,0.9);
+    flex: 1;
+    background: #222222E6; /* dark theme */
     backdrop-filter: blur(8px);
     color: #ffffff;
     padding: 25px;
@@ -41509,11 +41649,11 @@ label {
     border: 1px solid #555;
     border-radius: 8px;
     padding: 10px;
-    color: #fff;
+    color: #fff !important;
 }
 
 .input-white::placeholder {
-    color: #ccc;
+    color: #ccc !important;
 }
 
 textarea {
@@ -41533,12 +41673,11 @@ textarea {
 }
 
 @media (max-width: 992px) {
-    .form-group.col-6 {
-        width: 100%;
+    .contact-info-area .row {
+        flex-direction: column;
+        gap: 20px;
     }
 }
-
-
 
 
 
@@ -41547,10 +41686,10 @@ textarea {
 /* marquee tag */
 .news-fullwidth {
     width: 100%;
-    background: #1e2635;
-    padding: 70px 0; /* increased vertical padding */
-    border-top: 2px solid #2e3a4d;
-    border-bottom: 2px solid #2e3a4d;
+    background: #222222E6;
+    padding: 0px 0px; /* increased vertical padding */
+    border-top: 4px solid #2e3a4d;
+    border-bottom: 3px solid #2e3a4d;
 }
 
 /* marquee */
@@ -42172,7 +42311,14 @@ ease;
     padding: 70px 0;
     font-family: var(--font-family);
     background-color: #f5f7fa;
+    
 }
+
+
+
+
+
+
 
 /* Section Title */
 .section-title {
@@ -42204,7 +42350,7 @@ ease;
 .maps-form {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
 }
 
 .maps-form .maps,
